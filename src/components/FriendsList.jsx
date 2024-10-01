@@ -1,10 +1,15 @@
 import { Friend } from "./Friend";
 
-export function Friendslist({ friends }) {
+export function Friendslist({ friends, onSelection, selectedFriend }) {
   return (
     <ul>
       {friends.map((friend) => (
-        <Friend friend={friend} key={friend.id} />
+        <Friend
+          friend={friend}
+          key={friend.id}
+          selectedFriend={selectedFriend}
+          onSelection={onSelection}
+        />
       ))}
     </ul>
   );
