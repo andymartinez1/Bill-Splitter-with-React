@@ -20,6 +20,8 @@ html {
 body {
   height: 100vh;
   color: #495057;
+  background: linear-gradient(200deg, green, blue);
+
   display: flex;
   align-items: center;
   justify-content: center;
@@ -27,6 +29,12 @@ body {
 
 .app {
   min-height: 66vh;
+  padding: 3rem;
+  border: 1px solid;
+  border-radius: 15px;
+  box-shadow: 1rem 1rem 2rem rgba(0, 0, 0, 0.1);
+  background-color: #e2e1df;
+
   display: grid;
   grid-template-columns: 34rem 44rem;
   column-gap: 4rem;
